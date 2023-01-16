@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "21640979004",
+    "project_id": "finaluri-4a804",
+    "storage_bucket": "finaluri-4a804.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:21640979004:android:f5b181cbf3d24041691939",
+        "android_client_info": {
+          "package_name": "com.example.finaluri"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "21640979004-o7g427k1o2t6f5ooed1ioo6peaust6p9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYhy54udYdltOMP9P-wWff_QiWlwQhJoA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "21640979004-o7g427k1o2t6f5ooed1ioo6peaust6p9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

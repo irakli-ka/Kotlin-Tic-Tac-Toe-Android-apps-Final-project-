@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6B4F98"
+    tools:context=".GameActivity">
+
+    <TextView
+        android:id="@+id/turnTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn X"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.712">
+
+        <LinearLayout style="@style/row">
+
+            <Button
+                android:id="@+id/square11"
+                style="@style/column"
+                android:layout_height="match_parent" />
+
+            <View style="@style/verticalLine" />
+
+            <Button
+                android:id="@+id/square12"
+                style="@style/column"
+                android:layout_height="match_parent" />
+
+            <View style="@style/verticalLine" />
+
+            <Button
+                android:id="@+id/square13"
+                style="@style/column"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+        <View style="@style/horizontalLine" />
+
+        <LinearLayout style="@style/row">
+
+            <Button
+                android:id="@+id/square21"
+                style="@style/column"
+                android:layout_height="match_parent" />
+
+            <View style="@style/verticalLine" />
+
+            <Button
+                android:id="@+id/square22"
+                style="@style/column"
+                android:layout_height="match_parent" />
+
+            <View style="@style/verticalLine" />
+
+            <Button
+                android:id="@+id/square23"
+                style="@style/column"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <View style="@style/horizontalLine" />
+
+        <LinearLayout style="@style/row">
+
+            <Button
+                android:id="@+id/square31"
+                style="@style/column"
+                android:layout_height="match_parent" />
+
+            <View style="@style/verticalLine" />
+
+            <Button
+                android:id="@+id/square32"
+                style="@style/column"
+                android:layout_height="match_parent" />
+
+            <View style="@style/verticalLine" />
+
+            <Button
+                android:id="@+id/square33"
+                style="@style/column"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="287dp"
+                tools:layout_editor_absoluteY="499dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/crossScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="45dp"
+        android:text="X: 0"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/noughtScore"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/noughtScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="1dp"
+        android:text="0: 0"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/crossScore" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/saveBtn"
+        android:layout_width="160dp"
+        android:layout_height="65dp"
+        android:background="@drawable/round_corners"
+        android:text="@string/save"
+        android:textAllCaps="false"
+        android:textColor="@color/purple_700"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/turnTV"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.407" />
+
+    <TextView
+        android:id="@+id/emailTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/saveBtn"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.513" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
